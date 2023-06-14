@@ -23,3 +23,9 @@ RUNNING ORDER -------------------------:
 2. generateHeatmap.m
 
 NOTE: make sure that output_folder name is consistent for both scripts
+
+OTHER HELPFUL LINKS -------------------:
+
+SAM ResNet setup for windows: https://github.com/katherrang/SAM-ResNet-for-Dummies 
+
+SAM ResNet setup for mac: https://www.dropbox.com/scl/fi/9nek2ybdhdic6fdzfu0dm/SAM-Algorithm-Download-for-Mac.docx?dl=0&rlkey=siw197lspo3akb7ouolexksmf 

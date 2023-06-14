@@ -1,7 +1,8 @@
 % visualizes SAM output as image overlay 
 
-output_folder = 'example';
+output_folder = 'example';  
 showTitle = 1;  % 1 = yes, 0 = no
+isMac = 0;      % 1 = yes, 0 = no 
 
 % remove old overlay and summary files
 overlayPath =  "overlay/" + output_folder;
@@ -18,7 +19,11 @@ mkdir(summaryPath);
 
 % import image filenames
 extractFilenames = dir("raw_output/" + output_folder + "/");
-files = extractFilenames(3:end);
+if isMac
+    files = extractFilenames(4:end);
+else
+    files = extractFilenames(3:end);
+end
 
 for i=1:length(files)
     img = files(i).name;
